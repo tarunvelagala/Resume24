@@ -1,0 +1,46 @@
+% Custom command for work experience with logo and multiple roles
+\newcommand{\experienceItem}[3]{
+    \noindent
+    \textbf{\raisebox{-0.3\height}{\includegraphics[width=0.5cm,height=0.5cm]{logos/#1}}} \textmd{\large#2} \\ % Company Name with Logo
+    \vspace{5pt} % Space between company name and roles
+    #3 % Roles and experiences
+}
+
+% Commands to start and end itemization of resume items
+\newcommand{\experienceItemListStart}{
+    \begin{itemize}[left=25pt, itemsep=0pt] % Adjust margins and spacing
+}
+
+\newcommand{\experienceItemListEnd}{
+    \end{itemize}
+}
+
+\section{\sectionHeading{Work Experience}}
+
+% Experience entries
+\experienceItem{amazon-icon.png}{Amazon}{
+    \hspace{17pt}\text{Application Engineer II $|$ {October 2023 - Present}}
+    \experienceItemListStart
+        \item Onboarded data pipelines with 500 TPS to the team’s transformation system, ensuring data accuracy before successful production launch.
+        \item  Onboarded critical datasets to our in-house system, improving security, query performance, and reducing analytical churn across the organization.
+    \experienceItemListEnd
+
+    \hspace{17pt} \text{Application Engineer I $|$ April 2022 - September 2023}
+    \experienceItemListStart
+        \item  Designed and implemented backend APIs for the SellerCentral Disbursement Tracker UI, handling 15 TPS and 100K seller visits daily. 
+        \item  Implemented IT's and monitoring capabilities for determining latency metrics and seller impacts.
+        \item  Developed backend APIs for a vendor-facing application using lightweight ORM capabilities, reducing latency from 55s to 25s.  
+    \experienceItemListEnd
+
+    \hspace{17pt} \text{Support Engineer II $|$ July 2020 - March 2022 }
+    \experienceItemListStart
+        \item  Onboarded different marketplaces WW allowing to contribute to vendor business and balance updates in Amazon Ledger.  
+        \item  Analyzed and resolved customer issues efficiently.
+    \experienceItemListEnd
+
+    \hspace{17pt} \text{Support Engineer II Intern $|$ January 2020 - July 2020}
+    \experienceItemListStart
+        \item  Worked on various tasks optimizing report generation, onboarding various services to profiling tools that analyzes application's performance and identify issues. 
+        \item  Analyzed and implemented dynamic rate limiting for a vendor facing distributed system that manages vendor lifecycle handling approximately 20 TPS. 
+    \experienceItemListEnd
+}

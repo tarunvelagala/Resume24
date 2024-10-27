@@ -1,0 +1,12 @@
+% Custom command for an education item
+\newcommand{\educationItem}[4]{
+    \begin{tabular*}{\textwidth}{@{}l@{\extracolsep{\fill}}l@{}}
+        \textbf{#1} & \textit{#2} \\ % Institution and Degree
+        \textit{#3} & \textit{#4} \\ % Location and Graduation Date
+    \end{tabular*}
+    \vspace{-4pt}
+}
+
+\section{\sectionHeading{Education}}
+
+\educationItem{Sathyabama University}{May 2016 - June 2020}{Computer Science and Engineering $|$ CGPA: 8.56}{Chennai, India}

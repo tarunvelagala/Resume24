@@ -1,0 +1,73 @@
+%------------PACKAGES---------------------
+\usepackage[a4paper,margin=1in]{geometry}
+\usepackage{graphicx} % Required for inserting images
+\usepackage[empty]{fullpage} % sets margins to one inch and removes headers, footers etc..
+\usepackage[hidelinks]{hyperref} % removes color and shadow of hyperlinks
+\usepackage[normalem]{ulem} % provides "\ul" (uline) command which will break at line breaks
+\usepackage{tabularx} % defines an environment tabularx
+\usepackage[english]{babel} % provides culturally determined typographical rules
+\usepackage{verbatim} % reimplements the "verbatim" and "verbatim*" environments
+\usepackage{titlesec} % provides an interface to sectioning commands
+\usepackage{xcolor} % provides both foreground and background color management
+\usepackage{amsmath}
+\usepackage{enumitem} 
+
+
+
+%------------RE-DEFINITIONS---------------------
+\renewcommand{\familydefault}{\sfdefault} % Sets the default font to sans-serif
+\setlength{\footskip}{4.08003pt}
+
+
+%------------ATS FRIENDLY---------------------
+\input glyphtounicode % converts glyph names to unicode
+\pdfgentounicode=1 % ensures pdfs generated are ats readable
+
+%----------FONT OPTIONS-------------------
+\usepackage[default]{sourcesanspro} % uses the font source sans pro
+\urlstyle{same} % changes url font
+
+%----------COLOR OPTIONS-----------------
+\definecolor{customblue}{HTML}{c2d6e8}
+\definecolor{custombluelight}{HTML}{36678d}
+
+%----------MARGIN OPTIONS-----------------
+\usepackage{fancyhdr} % include fancyhdr package
+\pagestyle{fancy} % set page style to one configured by fancyhdr
+\fancyhf{} % clear all header and footer fields
+
+\renewcommand{\headrulewidth}{0in} % sets thickness of linerule under header to zero
+\renewcommand{\footrulewidth}{0in} % sets thickness of linerule over footer to zero
+
+% origin of the document is one inch from the top and from and the left
+% oddsidemargin and evensidemargin both refer to the left margin
+% right margin is indirectly set using oddsidemargin
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\topmargin}{-0.5in}
+
+% Set margins using geometry package
+\usepackage[a4paper, margin=1in]{geometry} % one inch margins on all sides
+
+\setlength{\tabcolsep}{0in} % sets thickness of column separator in tables to zero
+
+% Ensuring that content respects the set margins
+\raggedbottom % makes all pages the height of current page, no extra vertical space added
+\raggedright % makes text aligned to the left
+
+%----------SECTION COMMANDS-----------------
+\titleformat{\section}
+  {\large}{}
+    {0em}{\color{custombluelight}}[{\color{customblue}\titlerule[2pt]}]
+
+%-------------SECTION HEADINGS-----------
+\newcommand{\sectionHeading}[1]{
+\MakeUppercase{\textbf{#1}}
+}
+
+
+
+
+
+
+
+
