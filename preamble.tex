@@ -1,73 +1,55 @@
 %------------PACKAGES---------------------
-\usepackage[a4paper,margin=1in]{geometry}
+\usepackage[a4paper,margin=1in]{geometry} % One-inch margins on all sides
 \usepackage{graphicx} % Required for inserting images
-\usepackage[empty]{fullpage} % sets margins to one inch and removes headers, footers etc..
-\usepackage[hidelinks]{hyperref} % removes color and shadow of hyperlinks
-\usepackage[normalem]{ulem} % provides "\ul" (uline) command which will break at line breaks
-\usepackage{tabularx} % defines an environment tabularx
-\usepackage[english]{babel} % provides culturally determined typographical rules
-\usepackage{verbatim} % reimplements the "verbatim" and "verbatim*" environments
-\usepackage{titlesec} % provides an interface to sectioning commands
-\usepackage{xcolor} % provides both foreground and background color management
-\usepackage{amsmath}
-\usepackage{enumitem} 
-
-
+\usepackage[hidelinks]{hyperref} % Removes color and shadow from hyperlinks
+\usepackage[normalem]{ulem} % Enables \ul (underline) command
+\usepackage{tabularx} % For flexible table columns
+\usepackage[english]{babel} % Language-specific typographical rules
+\usepackage{verbatim} % Verbatim environment for unformatted text
+\usepackage{titlesec} % Customization of section headings
+\usepackage{xcolor} % Color management
+\usepackage{amsmath} % Math environments
+\usepackage{enumitem} % Customizable lists
+\usepackage{helvet} % Helvetica Font
 
 %------------RE-DEFINITIONS---------------------
-\renewcommand{\familydefault}{\sfdefault} % Sets the default font to sans-serif
-\setlength{\footskip}{4.08003pt}
-
+\renewcommand{\familydefault}{\sfdefault} % Set default font to sans-serif
 
 %------------ATS FRIENDLY---------------------
-\input glyphtounicode % converts glyph names to unicode
-\pdfgentounicode=1 % ensures pdfs generated are ats readable
+\input glyphtounicode % Converts glyph names to Unicode
+\pdfgentounicode=1 % Makes generated PDFs ATS-friendly
 
 %----------FONT OPTIONS-------------------
-\usepackage[default]{sourcesanspro} % uses the font source sans pro
-\urlstyle{same} % changes url font
+\usepackage[default]{sourcesanspro} % Use Source Sans Pro font
+\urlstyle{same} % Match URL font with document font
 
 %----------COLOR OPTIONS-----------------
 \definecolor{customblue}{HTML}{c2d6e8}
 \definecolor{custombluelight}{HTML}{36678d}
 
 %----------MARGIN OPTIONS-----------------
-\usepackage{fancyhdr} % include fancyhdr package
-\pagestyle{fancy} % set page style to one configured by fancyhdr
-\fancyhf{} % clear all header and footer fields
+\usepackage{fancyhdr} % For custom header/footer
+\pagestyle{fancy} % Apply fancy page style
+\fancyhf{} % Clear header and footer fields
 
-\renewcommand{\headrulewidth}{0in} % sets thickness of linerule under header to zero
-\renewcommand{\footrulewidth}{0in} % sets thickness of linerule over footer to zero
+\renewcommand{\headrulewidth}{0in} % Remove header line
+\renewcommand{\footrulewidth}{0in} % Remove footer line
 
-% origin of the document is one inch from the top and from and the left
-% oddsidemargin and evensidemargin both refer to the left margin
-% right margin is indirectly set using oddsidemargin
+% Adjust margins slightly for better use of space
 \addtolength{\oddsidemargin}{-0.5in}
 \addtolength{\topmargin}{-0.5in}
 
-% Set margins using geometry package
-\usepackage[a4paper, margin=1in]{geometry} % one inch margins on all sides
+\setlength{\tabcolsep}{0in} % Remove column spacing in tables
 
-\setlength{\tabcolsep}{0in} % sets thickness of column separator in tables to zero
+\raggedbottom % Prevent adding extra vertical space to pages
+\raggedright % Left-align all text
 
-% Ensuring that content respects the set margins
-\raggedbottom % makes all pages the height of current page, no extra vertical space added
-\raggedright % makes text aligned to the left
+%-------------TITLE SPACING-----------
+\titlespacing*{\section}{0pt}{*1.7}{*1.7} % Adjust spacing: {left}{before}{after}
 
 %----------SECTION COMMANDS-----------------
 \titleformat{\section}
-  {\large}{}
-    {0em}{\color{custombluelight}}[{\color{customblue}\titlerule[2pt]}]
+  {\large}{}{0em}{\color{custombluelight}}[{\color{customblue}\titlerule[1pt]}]
 
 %-------------SECTION HEADINGS-----------
-\newcommand{\sectionHeading}[1]{
-\MakeUppercase{\textbf{#1}}
-}
-
-
-
-
-
-
-
-
+\newcommand{\sectionHeading}[1]{\MakeUppercase{\textbf{#1}}}

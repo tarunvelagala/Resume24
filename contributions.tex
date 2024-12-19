@@ -1,0 +1,20 @@
+\newcommand{\contributionItem}[2]{
+    \textbf{#1} \\ {#2}
+}
+
+% Commands to start and end itemization of resume items
+\newcommand{\contributionItemListStart}{
+    \begin{itemize}
+}
+
+\newcommand{\contributionItemListEnd}{
+    \end{itemize}
+} 
+
+\section{\sectionHeading{Contributions}}
+
+\contributionItem{SPFT Hackathon}{
+    \contributionItemListStart
+        \item Created a conversational chatbot with AWS Lex and API Gateway to help resolve seller queries about failed payments through SellerCentral UI.
+        \item Contributed by developing a mobile-friendly repayment portal concept, enabling sellers to repay balances through mobile.
+    \contributionItemListEnd}

@@ -1,13 +1,10 @@
 % Define the custom \skillItem command
-% Custom command for a skill item
 \newcommand{\skillItem}[2]{
-    \begin{minipage}[t]{0.45\textwidth} % Adjust width as needed
-        {\textbf{#1}} - {#2}
-    \end{minipage}
+    \textbf{#1} - #2 \\
 }
 
 \section{\sectionHeading{Skills}}
-\begin{tabular}{@{}ll@{}}
-    \skillItem{Languages}{Python, Java, Typescript} & \skillItem{Frameworks}{} \\
-    \skillItem{BuildTools}{SQL, MongoDB} & \skillItem{Cloud} {Git, Docker, Jenkins} \\
-\end{tabular}
+
+\skillItem{Languages}{Java, Python, Typescript, SQL}
+\skillItem{Libraries \& Frameworks}{Guice, Dagger, REST API, SpringBoot, Junit, TestNG, Mockito}
+\skillItem{AWS Services}{Cloudwatch, SQS, AppConfig, ECS, Lambda, Redshift[ETL], Glue}
