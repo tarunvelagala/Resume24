@@ -7,8 +7,9 @@ jobs:
       - name: Set up Git repository
         uses: actions/checkout@v2
 
-      - name: Compile LaTeX document
-        uses: Sakul6499/GitHub-Action-LaTeX@v1.0.0
+      - name: LaTeX document compiler
+        uses: SakulFlee/GitHub-Action-LaTeX@v1.0.1
+    
         with:
           latex_main_file: main.tex
 
