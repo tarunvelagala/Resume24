@@ -1,2 +1,3 @@
 # Resume24
-Latex Resume
+
+[Tarun Latex Resume](tarun_resume.pdf)
