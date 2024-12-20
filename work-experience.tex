@@ -8,7 +8,7 @@
 
 % Commands to start and end itemization of resume items
 \newcommand{\experienceItemListStart}{
-    \begin{itemize}[left=25pt, itemsep=0pt] % Adjust margins and spacing
+    \begin{itemize}[left=25pt, itemsep=0.3pt] % Adjust margins and spacing
 }
 
 \newcommand{\experienceItemListEnd}{
@@ -18,30 +18,31 @@
 \section{\sectionHeading{Work Experience}}
 
 % Experience entries
-\experienceItem{amazon-icon.png}{Amazon}{
-    \hspace{17pt}\text{Application Engineer II} $|$ \textit{October 2023 - Present}}
+\experienceItem{amazon-icon.png}{\text{Amazon}}
+    
+    {\hspace{17pt}\text{Application Engineer II} $|$ \textit{November 2023 - Present}}
     \experienceItemListStart
-        \item Integrated critical datasets into an enhanced ETL pipeline using AWS Glue, ensuring data validity, correctness and improved organizational on-boarding processes for a successful production launch.
-        \item Team player in migrating external and internal clients, along with Operational Excellence, from a legacy system to an enhanced Seller Balance Tracking and Management system, ensuring a successful launch.
-        \item Led and collaborated with teams to migrate an existing version of a centralized data sharing platform, improving queryability and governance of organizational datasets as part of an Amazon-wide initiative. 
+        \item Identified data accuracy gaps and analyzed ETL pipeline performance, ensuring smooth production launch for transforming critical, high-traffic datasets.  
+        \item Orchestrated collaboration with cross-functional teams to upgrade the internal data-sharing platform, standardizing it's usage across the team and onboarded 115 datasets to the new version.
+        \item Instrumental in migrating the Redshift cluster from a public to a private subnet, facilitating client onboarding for private subnet access, and enabling queryability and secure data analytics on 2.6 PB of seller data. 
+        \item Contributed in upgrading to an enhanced Seller Balance Tracking and Management platform, driving improved operational efficiency and system reliability that handles 650TPS and \$1B transactions per year.
         \experienceItemListEnd
 
     \hspace{17pt} \text{Application Engineer I} $|$ \textit{April 2022 - September 2023}
     \experienceItemListStart
-        \item Designed the HLD, LLD, shadow validation and migration strategy for backend APIs supporting the SellerCentral Disbursement Tracker UI, handling 15 TPS and 100K seller visits daily.
+        \item Design and implementation of API's of backend service, migration processes and shadow validation with AWS SQS for the seller payments tracking UI that handles 15 TPS and 100K daily visits, while enhancing payment tracking and satisfaction.
         \item Led root cause analysis and resolution of a \$5M seller balance data discrepancy, enhancing data integrity and financial reporting accuracy.
-        \item <<TBD>>
     \experienceItemListEnd
 
     \hspace{17pt} \text{Support Engineer II} $|$ \textit{July 2020 - March 2022 }
     \experienceItemListStart
         \item  Onboarded various marketplaces worldwide, enabling vendors to contribute to business and balance updates in the Amazon Ledger.  
-        \item  Developed back-end APIs for a vendor-facing application using lightweight ORM capabilities, achieving a 30\% reduction in response time. 
+        \item  Developed back-end APIs for a vendor-facing application using lightweight ORM capabilities, achieving a 30\% reduction in response time using API Gateway.  
     \experienceItemListEnd
 
     \hspace{17pt} \text{Support Engineer II Intern} $|$ \textit{January 2020 - July 2020}
     \experienceItemListStart
-        \item  Worked on various tasks optimizing report generation, onboarding various services to profiling tools that analyzes application's performance and identify issues.
-        \item  Analyzed and implemented dynamic rate limiting for a vendor facing distributed system that manages vendor lifecycle handling approximately 20 TPS. 
+        \item  Optimized report generation and onboarded services to profiling tools to analyze application performance and identify issues.
+        \item  Implemented dynamic rate limiting for a vendor-facing system handling vendor lifecycle with around 20 transactions per second. 
     \experienceItemListEnd
 

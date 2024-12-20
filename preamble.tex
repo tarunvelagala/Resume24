@@ -1,5 +1,5 @@
 %------------PACKAGES---------------------
-\usepackage[margin=1in, footskip=0.25in]{geometry} % One-inch margins on all sides
+\usepackage[empty]{fullpage} % sets margins to one inch and removes headers, footers etc..
 \usepackage{graphicx} % Required for inserting images
 \usepackage[hidelinks]{hyperref} % Removes color and shadow from hyperlinks
 \usepackage[normalem]{ulem} % Enables \ul (underline) command
@@ -31,13 +31,16 @@
 \usepackage{fancyhdr} % For custom header/footer
 \pagestyle{fancy} % Apply fancy page style
 \fancyhf{} % Clear header and footer fields
+\addtolength{\textwidth}{1.0in} % sets width of text area in the page to one inch
+\addtolength{\textheight}{1.0in} % sets height of text area in the page to one inch
+\setlength{\footskip}{4.08003pt}
 
 \renewcommand{\headrulewidth}{0in} % Remove header line
 \renewcommand{\footrulewidth}{0in} % Remove footer line
 
 % Adjust margins slightly for better use of space
-\addtolength{\oddsidemargin}{-0.25in}
-\addtolength{\topmargin}{-0.25in}
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\topmargin}{-0.5in}
 
 \setlength{\tabcolsep}{0in} % Remove column spacing in tables
 
