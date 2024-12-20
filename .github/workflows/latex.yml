@@ -1,8 +1,5 @@
 name: Release Compiled Latex PDF 
-on:
-  push:
-    tags:
-      - '*.*.*'
+on: [push, pull_request]
 
 jobs:
   build_latex:
