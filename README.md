@@ -1,3 +1,3 @@
 # Resume24
 
-[Tarun Latex Resume](tarun_resume.pdf)
+[Tarun Latex Resume](main.pdf)
